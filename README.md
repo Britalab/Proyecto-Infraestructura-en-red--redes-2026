@@ -104,10 +104,16 @@ Solución: salir a modo privilegiado (#)
 Causa: topología / enlaces entre switches
 Solución: reconexión y verificación de puertos
 📸 Evidencia (agregar imágenes)
+
 Topología de red
+<img width="1225" height="705" alt="topologia" src="https://github.com/user-attachments/assets/c7b1c657-e3e4-4410-a6f0-38a7aebdc2e1" />
+
 Ping exitoso
+
 SSH funcionando
+
 Configuración del router
+
 🧠 Conclusión
 
 Se logró implementar una red funcional en un entorno simulado, aplicando conceptos de:
