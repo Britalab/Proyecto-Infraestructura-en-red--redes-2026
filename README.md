@@ -1,4 +1,4 @@
-[show running-config.txt](https://github.com/user-attachments/files/26247530/show.running-config.txt)# Proyecto-Infraestructura-en-red--redes-2026
+# Proyecto-Infraestructura-en-red--redes-2026
 🏢 Proyecto: Infraestructura de Red – Redes2026
 
 Diseño e implementación de una arquitectura de red corporativa en Cisco Packet Tracer, basada en un edificio de 3 pisos, aplicando principios de switching, direccionamiento IP y acceso remoto seguro mediante SSH.
