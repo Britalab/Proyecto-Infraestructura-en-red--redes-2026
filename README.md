@@ -1,4 +1,4 @@
-# Proyecto-Infraestructura-en-red--redes-2026
+[show running-config.txt](https://github.com/user-attachments/files/26247530/show.running-config.txt)# Proyecto-Infraestructura-en-red--redes-2026
 🏢 Proyecto: Infraestructura de Red – Redes2026
 
 Diseño e implementación de una arquitectura de red corporativa en Cisco Packet Tracer, basada en un edificio de 3 pisos, aplicando principios de switching, direccionamiento IP y acceso remoto seguro mediante SSH.
@@ -109,10 +109,102 @@ Topología de red
 <img width="1225" height="705" alt="topologia" src="https://github.com/user-attachments/assets/c7b1c657-e3e4-4410-a6f0-38a7aebdc2e1" />
 
 Ping exitoso
+<img width="723" height="428" alt="ping" src="https://github.com/user-attachments/assets/212d05f6-1a54-4fb1-abea-6c90a063f054" />
 
 SSH funcionando
+<img width="292" height="175" alt="ssh" src="https://github.com/user-attachments/assets/15ced33b-9f5f-41d4-b99b-67f9092c13c1" />
 
 Configuración del router
+
+[UploadingBRITANNY#show running-config
+Building configuration...
+
+Current configuration : 838 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname BRITANNY
+!
+!
+!
+enable secret 5 $1$mERr$skGXeqwFuFPbjF3GTz7800
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+username admin1 secret 5 $1$mERr$90zWlXMe2wBOKzRsmZb3m/
+!
+!
+license udi pid CISCO1941/K9 sn FTX15241976-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+ip ssh time-out 60
+ip domain-name BRITANNY.CL
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ ip address 172.20.31.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ ip address 200.200.31.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+!
+!
+end show running-config.txt…]()
+
 
 🧠 Conclusión
 
